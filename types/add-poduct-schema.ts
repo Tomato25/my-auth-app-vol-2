@@ -11,8 +11,7 @@ export const productSchema = z.object({
         .max(1000, "Maximum number of characters is 1000"),
     employeeId: z
         .string()
-        .optional()
-        .nullable(),
+        .optional(),
     internalCode: z
         .string()
         .min(1, "Please enter the product code")

@@ -19,7 +19,7 @@ import PaginationComponent from '@/components/paginationComponent'
 type EmployeesProps = {
   data: EmployeeDetailsType[]
   pages: number
-  unassignedProducts: ProductType[]
+  unassignedProducts: ProductType[] 
 }
 
 export function Employees({data, pages, unassignedProducts}: EmployeesProps)  {
