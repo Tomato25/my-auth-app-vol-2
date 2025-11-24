@@ -35,7 +35,7 @@ export default function EditProductForm({product, employees, onSuccess}: EditPro
             serialNumber: product.serialNum,
             internalCode: product.internalCode,
             status: product.status as "Active" | "Inactive",
-            employeeId: product.employeeId,
+            employeeId: product.employeeId ,
       }
 
       const form = useForm<UpdateProductFormValues>({

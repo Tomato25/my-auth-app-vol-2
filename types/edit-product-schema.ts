@@ -14,7 +14,8 @@ export const editProductSchema = z.object({
                  employeeId: z
                      .string()
                      .min(1, "Please choose the assigned employee")
-                     .max(64, "Maksimalni broj znakova je 64"),
+                     .max(64, "Maksimalni broj znakova je 64")
+                     .optional(),
                  internalCode: z
                      .string()
                      .min(1, "Please enter the product code")
