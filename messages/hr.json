@@ -1,0 +1,51 @@
+{
+  "employees": {
+    "title": "Zaposlenici",
+    "add": "Dodaj zaposlenika",
+    "name": "Ime",
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "email": "Email",
+    "role": "Uloga",
+    "status": "Status",
+    "deactivateConfirmation": "Jeste li sigurni da želite deaktivirati {name}?",
+    "addNew": "Dodaj novo",
+    "filterName": "Filtriraj po imenu...",
+    "submit": "Potvrdi",
+    "active": "Aktivan",
+    "inactive": "Neaktivan",
+    "select": "Odaberi"
+  },
+  "buttons": {
+    "close": "Zatvori"
+  },
+  "links": {
+    "employees": "Zaposlenici",
+    "products": "Proizvodi"
+  },
+  "productTable": {
+    "productName": "Naziv proizvoda",
+    "description": "Opis",
+    "serialNumber": "Serijski broj",
+    "status": "Status",
+    "internalCode": "Interni kod",
+    "noProducts": "Nema nedodijeljenih proizvoda",
+    "unassignedProducts": "Nedodijeljeni proizvodi",
+    "assignProduct": "Dodijeli proizvod",
+    "assignedProducts": "Dodijeljeni proizvodi za korisnika",
+    "noAssignedProducts": "Nema dodijeljeni proizvodi za korisnika"
+  },
+   "table": {
+    "name": "Ime",
+    "email": "Email",
+    "role": "Uloga",
+    "status": "Status",
+    "details": "Detalji",
+    "edit": "Uredi",
+    "activate": "Aktiviraj",
+    "deactivate": "Deaktiviraj",
+    "error": "Greška",
+    "yes": "Da",
+    "no": "Ne"
+  }
+}

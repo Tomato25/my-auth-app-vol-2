@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  Manager
+  Developer
+  Tester
+}
+
+enum Status {
+  Active
+  Inactive
+}
+
+model User {
+  id          String @id @unique @default(cuid())
+  email       String @unique
+  password    String
+  name        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Employee {
+  id        String    @unique @default(cuid())
+  firstName String
+  lastName  String
+  email     String    @unique
+  emailVerified DateTime?
+  role      Role
+  status    Status
+  products  Product[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt 
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+ 
+  @@id([identifier, token])
+}
+
+model Product { 
+  id           String   @unique @default(cuid())
+  name         String
+  description  String
+  employeeId   String?
+  internalCode String? 
+  serialNum    String   @unique
+  status       Status   @default(Active)
+  employee     Employee? @relation(fields: [employeeId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt 
+}

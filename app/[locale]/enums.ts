@@ -1,0 +1,13 @@
+export enum ModalType {
+    ADD_EMPLOYEE = "ADD_EMPLOYEE",
+    EDIT_EMPLOYEE = "EDIT_EMPLOYEE",
+    DETAILS_EMPLOYEE = "DETAILS_EMPLOYEE",
+    ADD_PRODUCT = "ADD_PRODUCT",
+    EDIT_PRODUCT = "EDIT_PRODUCT",
+    DETAILS_PRODUCT = "DETAILS_PRODUCT"
+}
+
+export enum Status {
+    ACTIVE = "Active",
+    INACTIVE = "Inactive"
+}

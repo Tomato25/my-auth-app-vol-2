@@ -1,0 +1,51 @@
+{
+  "employees": {
+    "title": "Employees",
+    "add": "Add employee",
+    "name": "Name",
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "deactivateConfirmation": "Are you sure you want to deactivate {name}?",
+    "addNew": "Add new",
+    "filterName": "Filter by name...",
+    "submit": "Submit",
+    "active":"Active",
+    "inactive":"Inactive",
+    "select":"Select"
+  },
+  "buttons": {
+    "close": "Close"
+  },  
+  "links": {
+    "employees": "Employees",
+    "products": "Products"
+  },
+  "productTable": {
+    "productName": "Product Name",
+    "description": "Description",
+    "serialNumber": "Serial Number",
+    "status": "Status",
+    "internalCode": "Internal Code",
+    "noProducts":"There are no unassigned products",
+    "unassignedProducts": "Unassigned Products",
+    "assignProduct": "Assign product",
+    "assignedProducts": "Products assigned to",
+    "noAssignedProducts": "No products assigned to"
+  },
+  "table": {
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "details":"Details",
+    "edit": "Edit",
+    "activate":"Activate",
+    "deactivate":"Deactivate",
+    "error": "Error",
+    "yes":"Yes",
+    "no":"No"
+    }
+}
