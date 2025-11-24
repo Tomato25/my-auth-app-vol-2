@@ -112,7 +112,7 @@ export default function EditProductForm({product, employees, onSuccess}: EditPro
                             Internal code
                         </FieldLabel>
                         <Input 
-                        {...field}
+                        value={field.value ?? ""}
                         id="form-internalCode"
                         aria-invalid={fieldState.invalid}
                         placeholder="DSN7593S"
@@ -193,7 +193,7 @@ export default function EditProductForm({product, employees, onSuccess}: EditPro
               <Field data-invalid={fieldState.invalid}>
                 <FieldLabel htmlFor="form-employeeId">Assigned Employee</FieldLabel>
                 <Select
-                  value={field.value}
+                  value={field.value ?? ""}
                   onValueChange={field.onChange}
                 >
                   <SelectTrigger id="form-employeeId">
